@@ -1,0 +1,30 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mc-myprj-storage-claim
+  namespace: mc-myprj
+  selfLink: /api/v1/namespaces/mc-myprj/persistentvolumeclaims/mc-myprj-storage-claim
+  uid: 10a0b2d7-4693-11ea-825b-0242ac11000f
+  resourceVersion: '229424'
+  creationTimestamp: '2020-02-03T14:40:04Z'
+  annotations:
+    pv.kubernetes.io/bind-completed: 'yes'
+    pv.kubernetes.io/bound-by-controller: 'yes'
+  finalizers:
+    - kubernetes.io/pvc-protection
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 500Mi
+  volumeName: pv0020
+  volumeMode: Filesystem
+status:
+  phase: Bound
+  accessModes:
+    - ReadWriteOnce
+    - ReadWriteMany
+    - ReadOnlyMany
+  capacity:
+    storage: 100Gi
