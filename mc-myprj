@@ -1,0 +1,20 @@
+kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: mc-myprj
+  selfLink: /apis/project.openshift.io/v1/projects/mc-myprj
+  uid: fa81c16a-4692-11ea-825b-0242ac11000f
+  resourceVersion: '229334'
+  creationTimestamp: '2020-02-03T14:39:27Z'
+  annotations:
+    openshift.io/description: mc-myprj
+    openshift.io/display-name: mc-myprj
+    openshift.io/requester: developer
+    openshift.io/sa.scc.mcs: 's0:c23,c7'
+    openshift.io/sa.scc.supplemental-groups: 1000520000/10000
+    openshift.io/sa.scc.uid-range: 1000520000/10000
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active
